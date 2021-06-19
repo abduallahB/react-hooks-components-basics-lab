@@ -16,14 +16,24 @@ function Home() {
   );
 }
 
+const About = (e) => {
+  return(
+    <div id="about"> Hello from about child component</div>
+  )
+} 
+
+
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* write an <About> component here */}
+      <Home />
+      <About />
     </div>
   );
 }
+
+
+
 
 export default App;
